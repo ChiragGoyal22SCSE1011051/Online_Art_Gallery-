@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Art Gallery</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎨 Art Lover's Gallery</h1>
+  </header>
+
+  <main>
+    <div class="gallery">
+
+      <!-- Artwork 1 -->
+      <div class="artwork" onclick="openModal(this, 'Mona Lisa', 'Leonardo da Vinci', 'https://en.wikipedia.org/wiki/Mona_Lisa')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/640px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa">
+        <div class="info">
+          <h3>Mona Lisa</h3>
+          <p>Leonardo da Vinci</p>
+        </div>
+      </div>
+
+      <!-- Artwork 2 -->
+      <div class="artwork" onclick="openModal(this, 'Wanderer above the Sea of Fog', 'Caspar David Friedrich', 'https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg" alt="Wanderer above the Sea of Fog">
+        <div class="info">
+          <h3>Wanderer above the Sea of Fog</h3>
+          <p>Caspar David Friedrich</p>
+        </div>
+      </div>
+
+      <!-- Artwork 3 -->
+      <div class="artwork" onclick="openModal(this, 'Girl with a Pearl Earring', 'Johannes Vermeer', 'https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Meisje_met_de_parel.jpg" alt="Girl with a Pearl Earring">
+        <div class="info">
+          <h3>Girl with a Pearl Earring</h3>
+          <p>Johannes Vermeer</p>
+        </div>
+      </div>
+
+      <!-- Artwork 4 -->
+      <div class="artwork" onclick="openModal(this, 'The Night Watch', 'Rembrandt', 'https://en.wikipedia.org/wiki/The_Night_Watch_(Rembrandt)')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/960px-The_Night_Watch_-_HD.jpg" alt="The Night Watch">
+        <div class="info">
+          <h3>The Night Watch</h3>
+          <p>Rembrandt</p>
+        </div>
+      </div>
+
+      <!-- Artwork 5 -->
+      <div class="artwork" onclick="openModal(this, 'The Starry Night', 'Vincent van Gogh', 'https://en.wikipedia.org/wiki/The_Starry_Night')">
+        <img src="https://www.artst.org/wp-content/uploads/2020/10/Van-Gogh-Starry-Night.jpg.webp" alt="The Starry Night">
+        <div class="info">
+          <h3>The Starry Night</h3>
+          <p>Vincent van Gogh</p>
+        </div>
+      </div>
+
+      <!-- Artwork 6 -->
+      <div class="artwork" onclick="openModal(this, 'The Scream', 'Edvard Munch', 'https://en.wikipedia.org/wiki/The_Scream')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Scream.jpg" alt="The Scream">
+        <div class="info">
+          <h3>The Scream</h3>
+          <p>Edvard Munch</p>
+        </div>
+      </div>
+
+      <!-- Artwork 7 -->
+      <div class="artwork" onclick="openModal(this, 'The Thinker', 'Auguste Rodin', 'https://en.wikipedia.org/wiki/The_Thinker')">
+        <img src="https://www.artst.org/wp-content/uploads/2021/10/The-Thinker-Auguste-Rodin.jpg.webp" alt="The Thinker">
+        <div class="info">
+          <h3>The Thinker</h3>
+          <p>Auguste Rodin</p>
+        </div>
+      </div>
+
+      <!-- Artwork 8 -->
+      <div class="artwork" onclick="openModal(this, 'American Gothic', 'Grant Wood', 'https://en.wikipedia.org/wiki/American_Gothic_(painting)')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/960px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg" alt="American Gothic">
+        <div class="info">
+          <h3>American Gothic</h3>
+          <p>Grant Wood</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
